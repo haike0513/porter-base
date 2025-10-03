@@ -3,7 +3,11 @@ use iroh::{protocol::Router, Endpoint, Watcher};
 use iroh_ping::{ALPN as PingALPN, Ping};
 #[tokio::main]
 async fn main() -> Result<()> {
-    let recv_ep = Endpoint::builder().discovery_n0().bind().await?;
+    let recv_ep = Endpoint::builder()
+    .discovery_local_network()
+    .discovery_dht()
+    .discovery_n0()
+    .bind().await?;
     let recv_router = Router::builder(recv_ep)
         .accept(PingALPN, Ping::new())
         .spawn();
