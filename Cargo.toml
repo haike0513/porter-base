@@ -5,6 +5,7 @@ members = ["porter-cli","porter-core"]
 [workspace.dependencies]
 iroh = { version = "0.92", default-features = false, features = ["discovery-pkarr-dht", "discovery-local-network"]}
 iroh-base = { version = "0.92", default-features = false, features = ["ticket"] }
+iroh-blobs = { version = "0.94" }
 iroh-gossip = { version = "0.92", default-features = false, features = ["net"] }
 iroh-ping = { version = "0.4"}
 anyhow = "1"
@@ -13,3 +14,4 @@ log = "*"
 tracing-subscriber = "0.3.20"
 rand="*"
 hex="*"
+n0-future = "*"
