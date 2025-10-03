@@ -2367,9 +2367,13 @@ name = "porter-cli"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "hex",
  "iroh",
  "iroh-ping",
+ "log",
+ "rand 0.8.5",
  "tokio",
+ "tracing-subscriber",
 ]
 
 [[package]]

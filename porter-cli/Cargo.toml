@@ -8,3 +8,7 @@ tokio.workspace = true
 anyhow.workspace = true
 iroh.workspace=true
 iroh-ping.workspace=true
+tracing-subscriber.workspace = true
+log.workspace=true
+rand.workspace=true
+hex.workspace=true
